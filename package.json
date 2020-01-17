@@ -14,6 +14,10 @@
   },
   "scripts": {
     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -35,4 +39,5 @@
       "last 1 safari version"
     ]
   }
+  
 }
