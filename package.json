@@ -1,5 +1,5 @@
 {
-  "homepage": "https://adilibrahimov.github.io/react-test/",
+  "homepage": "https://adilibrahimov.github.io/react-test",
   "name": "web",
   "version": "0.1.0",
   "private": true,
@@ -13,14 +13,12 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "deploy": "gh-pages -b master -d build",
-    "build:staging": "env-cmd -f .env.staging npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
